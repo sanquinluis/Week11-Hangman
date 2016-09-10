@@ -15,7 +15,7 @@ var Letter = function(letras){
 		} else {
 			return "_";
 		}
-	};
+	}
 };
 
 module.exports = Letter;
