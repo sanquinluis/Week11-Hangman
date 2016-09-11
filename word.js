@@ -10,6 +10,6 @@ var Word = function(palabras){
 	this.guessed = false;
 	//Method that will make the computer guess for a random word.
 	this.
-//testing..
+
 
 };
