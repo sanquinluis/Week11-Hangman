@@ -1,7 +1,7 @@
 //CONSTRUCTOR FUNCTION FOR LETTER.JS
 //Instructions:
 //Letter.js Should control whether or not a letter appears as a "_" or as itself on-screen.
-
+//=====================================================================================
 var Letter = function(letras){
 
 	this.theLetters = letras;
@@ -17,5 +17,5 @@ var Letter = function(letras){
 		}
 	}
 };
-
+//=====================================================================================
 module.exports = Letter;

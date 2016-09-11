@@ -6,11 +6,14 @@ var Letter = require('./Letter.js');
 
 var Word = function(palabras){
 	//Variables with an empty array.
-	this.LetterObjects = [];
+	this.letterFound = [];
 	this.guessed = false;
-	//Method 
-	this.randomWord = function(){
-		var compRandom = this
+	//Method to find the letter in the word.
+	this.lettersInWord = function(){
+		for(var i = 0; i <this.letterFound.length; i++){
+
+
+		}
 	}
 
 };
