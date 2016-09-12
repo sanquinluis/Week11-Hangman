@@ -15,9 +15,6 @@ var Word = function(palabras){
 		for(var i = 0; i <this.palabras.length; i++){
 			var theNewLetter = new Letter(this.palabras[i]);
 			this.letterArray.push(theNewLetter);
-			if(){
-				
-			}
 		}
 	}
 	return letterArray;
@@ -25,14 +22,14 @@ var Word = function(palabras){
 };
 //=====================================================================================
 //Second Function
-
+?
 
 //=====================================================================================
 //Third Function
-
+?
 //=====================================================================================
 //Fourth Function
-
+?
 
 
 

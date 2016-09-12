@@ -11,5 +11,9 @@
     "url": "git@github.com/sanquinluis/week11-hangman.git"
   },
   "author": "Hector Santana-Quintana",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "prompt": "^1.0.0"
+  },
+  "devDependencies": {}
 }

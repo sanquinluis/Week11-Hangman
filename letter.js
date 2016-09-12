@@ -1,6 +1,9 @@
 //CONSTRUCTOR FUNCTION FOR LETTER.JS
 //Instructions:
 //Letter.js Should control whether or not a letter appears as a "_" or as itself on-screen.
+//Accessing the Game random words.
+var Word = require("./word.js");
+var Game = require("./game.js");
 //=====================================================================================
 var Letter = function(letras){
 
