@@ -12,7 +12,6 @@ var Letter = function(letras){
 	this.shows = false;
 	//Method that will tell us if the letter appears or if "_" will appear.
 	this.letterShows = function(theLetters){
-		console.log("letterShows" + theLetters);
 		if(theLetters === this.theLetters){
 			return theLetters;
 		} else {

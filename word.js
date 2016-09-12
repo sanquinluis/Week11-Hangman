@@ -9,6 +9,7 @@ var Word = function(palabras){
 	//Variables with an empty array.
 	this.palabras = palabras;
 	this.letterArray = [];
+	this.isthelettersthere = false;
 
 	//Method to find the letter in the word.
 	this.lettersInWord = function(){
@@ -19,18 +20,29 @@ var Word = function(palabras){
 	}
 	return letterArray;
 
-};
+
 //=====================================================================================
 //Second Function
-?
+	this.findIt =function(){
+		var expecting = 0;
+		for(var i = 0; i <this.letterArray.length;i++){
+			if(this.letterArray[i].shows === true){
+				expecting++;
+			} else {
+				this.isthelettersthere = true;
+
+			}
+			return isthelettersthere;
+		}
+	}
 
 //=====================================================================================
 //Third Function
-?
+//?
 //=====================================================================================
 //Fourth Function
-?
-
+//?
+}
 
 
 module.exports = Word;
