@@ -2,22 +2,31 @@
 //Instructions:
 //Letter.js Should control whether or not a letter appears as a "_" or as itself on-screen.
 //Accessing the Game random words.
-var Word = require("./word.js");
-var Game = require("./game.js");
 //=====================================================================================
 var Letter = function(letras){
 
+	this.current = "_"
 	this.theLetters = letras;
 	//letter appears
-	this.shows = false;
-	//Method that will tell us if the letter appears or if "_" will appear.
-	this.letterShows = function(theLetters){
-		if(theLetters === this.theLetters){
-			return theLetters;
-		} else {
-			return "_";
+	this.showsLetter = false;
+	this.letterin = function(letter){
+		if(this.theLetters == letter){
+			this.current = this.theLetters; 
+			return true;
 		}
+			return false;
+	}
+	//Method that will tell us if the letter appears or if "_" will appear.
+	this.letterShows = function(){
+		return this.current;
 	}
 };
+// var x = new Letter("x");
+// console.log(x.theLetters);
+// console.log(x.letterShows());
+// console.log(x.letterin("t"));
+// console.log(x.letterin("x"));
+// console.log(x.letterShows());
+
 //=====================================================================================
 module.exports = Letter;

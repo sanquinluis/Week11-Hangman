@@ -5,10 +5,13 @@ var Word = require("./word.js");
 
 
 var Game = function(){
-	var secretWords = ["Bass","Guitar","Drums","Bongos","Congas","Maracas","Violin","Microphone","Singer"];
+	this.secretWords = ["bass","guitar","drums","bongos","congas","maracas","violin"];
 
-	var randomWord = secretWords[Math.floor(Math.random() * secretWords.length)];
-	console.log(secretWords);
+	this.randomWord = this.secretWords[ Math.floor(Math.random() * this.secretWords.length)];
+	this.currentWord = new Word(this.randomWord);
+	
 }
+	var hangMan = new Game;
+	console.log(hangMan.randomWord);
 
 module.exports = Game;
