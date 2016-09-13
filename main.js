@@ -4,25 +4,24 @@
 //The app should end when a player guesses the correct word or runs out of guesses.
 var prompt = require("prompt");
 var Game = require('./game.js');
-
-var theHangman = new Game();
+var hangmanGame = new Game();
+var userGuess = 10;
 
 	prompt.start(); //starting the prompt
-	var userGuess = 10;
+
 	letTheGameBegin();
 //=====================================================================================
 		function letTheGameBegin(){
+			
+			if(hangmanGame.currentWord.grabLetters() != comparingWords()){
+				console.log("you already tried that letter");
+				return;
+			}
 			//if the user is out of gusses!
 			if(userGuess <= 0){
 				console.log("Game Over!");
 				return;
 			}
-			if(theHangman.currentWord.foundIt()){
-				console.log("You have won!");
-				return;
-
-			}
-
 }
 
 

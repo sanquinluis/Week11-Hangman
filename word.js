@@ -45,6 +45,7 @@ var Word = function(palabras){
 		return added;
 
 	}
+	// this.foundIt();
 
 //=====================================================================================
 //Third Function Method that compares the letter in the secrete word with the letter input.
@@ -59,6 +60,7 @@ var Word = function(palabras){
  		}
  				return true;
  	}
+ 	// this.comparingWords();
 //=====================================================================================
 //Fourth Function it will display the letters in an emptystring.
 	this.display = function(){
@@ -69,6 +71,7 @@ var Word = function(palabras){
 		}
 		return emptyString;
 	}
+	// this.display();
 } //end of Word function
 
 
