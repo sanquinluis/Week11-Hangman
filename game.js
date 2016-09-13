@@ -11,7 +11,7 @@ var Game = function(){
 	this.currentWord = new Word(this.randomWord);
 	
 }
-	var hangMan = new Game;
-	console.log(hangMan.randomWord);
+	var hangMan = new Game();
+	// console.log(hangMan.randomWord);
 
 module.exports = Game;

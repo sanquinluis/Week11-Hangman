@@ -22,7 +22,7 @@ var Word = function(palabras){
 	}
 	this.grabLetters();
 //=====================================================================================
-//Second Function "method"
+//Second Function "method" that finds the letter in the gusses array.
 	this.foundIt = function(guessLetter){
 		for(var i = 0; i <this.guesses.length; i++){
 			if(guessLetter == this.guesses[i]){
@@ -47,7 +47,7 @@ var Word = function(palabras){
 	}
 
 //=====================================================================================
-//Third Function
+//Third Function Method that compares the letter in the secrete word with the letter input.
  	this.comparingWords = function(){
  		for(var i = 0; i < this.palabras.length; i++){
  			console.log("secret word letter:", this.palabras.charAt(i));
@@ -60,7 +60,7 @@ var Word = function(palabras){
  				return true;
  	}
 //=====================================================================================
-//Fourth Function ???
+//Fourth Function it will display the letters in an emptystring.
 	this.display = function(){
 		var emptyString = "";
 			
@@ -69,7 +69,7 @@ var Word = function(palabras){
 		}
 		return emptyString;
 	}
-} //end of function
+} //end of Word function
 
 
 // var blue = new Word("red");

@@ -3,19 +3,21 @@
 //main.js will contain the logic of your app. Running it in Terminal/Bash will start the game.
 //The app should end when a player guesses the correct word or runs out of guesses.
 var prompt = require("prompt");
-var game = require('./game.js');
+var Game = require('./game.js');
 
-// var theHangman = new Game();
+var theHangman = new Game();
 
 	prompt.start(); //starting the prompt
-
-		function letTheGameBegin(userGuess){
+	var userGuess = 10;
+	letTheGameBegin();
+//=====================================================================================
+		function letTheGameBegin(){
 			//if the user is out of gusses!
 			if(userGuess <= 0){
 				console.log("Game Over!");
 				return;
 			}
-			if(hangMan.currentWord.foundIt()){
+			if(theHangman.currentWord.foundIt()){
 				console.log("You have won!");
 				return;
 
