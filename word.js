@@ -20,13 +20,13 @@ var Word = function(palabras){
 
 		}
 	}
-	
+	this.grabLetters();
 //=====================================================================================
-//Second Function "method" that finds the letter in the gusses array.
+//Second Function "method" that finds the letter in the guesses array.
 	this.foundIt = function(guessLetter){
 		for(var i = 0; i <this.guesses.length; i++){
 			if(guessLetter == this.guesses[i]){
-				return;
+				return true;
 			}
 		}
 		console.log(guessLetter);
@@ -51,8 +51,8 @@ var Word = function(palabras){
 //Third Function Method that compares the letter in the secrete word with the letter input.
  	this.comparingWords = function(){
  		for(var i = 0; i < this.palabras.length; i++){
- 			console.log("secret word letter:", this.palabras.charAt(i));
- 			console.log("letters:",this.guessedWord[i].current);
+ 			// console.log("secret letter:", this.palabras.charAt(i));
+ 			// console.log("letters:",this.guessedWord[i].current);
  			if(this.palabras.charAt(i) != this.guessedWord[i].current){
  				return false;
  			}

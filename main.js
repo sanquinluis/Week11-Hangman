@@ -8,13 +8,12 @@ var hangmanGame = new Game();
 var userGuess = 10;
 
 	prompt.start(); //starting the prompt
-	grabLetters();
 	letTheGameBegin();
 //=====================================================================================
 		function letTheGameBegin(){
 
-			if(hangmanGame.currentWord.grabLetters() === comparingWords()){
-				console.log();
+			if(hangmanGame.currentWord.comparingWords() == true){
+				console.log("You win");
 				return;
 			}
 			//if the user is out of gusses!
@@ -23,12 +22,21 @@ var userGuess = 10;
 				return;
 			}
 
-	prompt.get([""], function(err, result){
+		hangmanGame.currentWord.display();
+		console.log(hangmanGame.currentWord.display());
 
+	prompt.get(["theGuess"], function(err, result){
+		if(err){
+			return err;
+		}
+		//compares the letter from secretword and the letter typed.
+		if(hangmanGame.currentWord.foundIt(result.theGuess) == false){
+			userGuess --;
+		}
+		letTheGameBegin();
 
-	})
+	});
 }
-
 
 
 
