@@ -12,9 +12,9 @@ var userGuess = 10;
 	letTheGameBegin();
 //=====================================================================================
 		function letTheGameBegin(){
-			
-			if(hangmanGame.currentWord.grabLetters() != comparingWords()){
-				console.log("you already tried that letter");
+
+			if(hangmanGame.currentWord.grabLetters() ==  ){
+				console.log(emptyString);
 				return;
 			}
 			//if the user is out of gusses!
@@ -22,6 +22,11 @@ var userGuess = 10;
 				console.log("Game Over!");
 				return;
 			}
+
+	prompt.get([""], function(err, result){
+
+
+	})
 }
 
 
@@ -30,7 +35,6 @@ var userGuess = 10;
 
 //var guesses = 10;
 //need to use inquire.prompt***
-//use the THEN... after he inquire
 //use a recursive call of the funciton
 //call the inquire function
 //ending case is important
