@@ -70,22 +70,21 @@ var Word = function(palabras){
 		return emptyString;
 	}
 } //end of function
+
+
 // var blue = new Word("red");
 // console.log(blue.palabras);
 // console.log(blue.guessedWord);
-// // console.log(blue.comparingWords());
-// // console.log(blue.display());
-// // console.log(blue.foundIt("h"));
-// // console.log(blue.display());
+// console.log(blue.comparingWords());
+// console.log(blue.display());
+// console.log(blue.foundIt("h"));
+// console.log(blue.display());
 // console.log(blue.foundIt("r"));
 // console.log(blue.display());
 // console.log(blue.foundIt("e"));
 // console.log(blue.foundIt("d"));
-//  console.log(blue.display());
-//  console.log(blue.comparingWords());
-
-
-
+// console.log(blue.display());
+// console.log(blue.comparingWords());
 module.exports = Word;
 
 
