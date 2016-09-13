@@ -20,7 +20,7 @@ var Word = function(palabras){
 
 		}
 	}
-	this.grabLetters();
+	
 //=====================================================================================
 //Second Function "method" that finds the letter in the gusses array.
 	this.foundIt = function(guessLetter){

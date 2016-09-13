@@ -8,13 +8,13 @@ var hangmanGame = new Game();
 var userGuess = 10;
 
 	prompt.start(); //starting the prompt
-
+	grabLetters();
 	letTheGameBegin();
 //=====================================================================================
 		function letTheGameBegin(){
 
-			if(hangmanGame.currentWord.grabLetters() ==  ){
-				console.log(emptyString);
+			if(hangmanGame.currentWord.grabLetters() === comparingWords()){
+				console.log();
 				return;
 			}
 			//if the user is out of gusses!
