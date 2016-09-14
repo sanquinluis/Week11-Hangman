@@ -8,21 +8,21 @@ var hangmanGame = new Game();
 var userGuess = 10;
 
 	prompt.start(); //starting the prompt
-	letTheGameBegin();
+	letTheGameBegin(userGuess);
 //=====================================================================================
-		function letTheGameBegin(){
-
+		function letTheGameBegin(guesses){
+			console.log("Guesses left: " + guesses);
 			if(hangmanGame.currentWord.comparingWords() == true){
 				console.log("You win");
 				return;
 			}
 			//if the user is out of gusses!
-			if(userGuess <= 0){
+			if(guesses <= 0){
 				console.log("Game Over!");
 				return;
 			}
 
-		hangmanGame.currentWord.display();
+		// will display the "_" and the number of spaces in the game.
 		console.log(hangmanGame.currentWord.display());
 
 	prompt.get(["theGuess"], function(err, result){
@@ -31,12 +31,12 @@ var userGuess = 10;
 		}
 		//compares the letter from secretword and the letter typed.
 		if(hangmanGame.currentWord.foundIt(result.theGuess) == false){
-			userGuess --;
+			guesses --;
 		}
-		letTheGameBegin();
+		letTheGameBegin(guesses);
 
 	});
-}
+}// end of the funcition and the game! :)
 
 
 
